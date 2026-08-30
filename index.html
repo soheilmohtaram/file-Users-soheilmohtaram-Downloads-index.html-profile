@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soheil Mohtaram — Clean Energy &amp; Thermal Systems Research</title>
+<meta name="description" content="Soheil Mohtaram — Distinguished Associate Professor in Clean Energy and Thermal Systems. 60+ SCI publications, UK Global Talent Visa holder.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0E141B;
+    --ink-2:#161F29;
+    --paper:#F2F4F5;
+    --paper-2:#E7EAEC;
+    --line: rgba(230,234,236,0.14);
+    --line-soft: rgba(14,20,27,0.10);
+    --cool:#2E8FA3;
+    --cool-soft: rgba(46,143,163,0.16);
+    --ember:#C1440E;
+    --ember-soft: rgba(193,68,14,0.14);
+    --text-hi:#F4F6F7;
+    --text-mid:#A9B4BD;
+    --text-dim:#6F7B85;
+    --text-ink-hi:#12181F;
+    --text-ink-mid:#4B565F;
+    --radius: 3px;
+    --maxw: 1120px;
+    --grad: linear-gradient(90deg, var(--cool) 0%, #6FA9A8 30%, #B98A4A 65%, var(--ember) 100%);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--text-ink-hi);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.55;
+  }
+  ::selection{ background: var(--ember); color:#fff; }
+
+  h1,h2,h3,h4{
+    font-family:'Space Grotesk', sans-serif;
+    margin:0;
+    letter-spacing:-0.01em;
+    color:inherit;
+  }
+  .mono{ font-family:'JetBrains Mono', monospace; }
+  a{ color:inherit; }
+  p{ margin:0; }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+
+  /* ---------- layout helpers ---------- */
+  .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 32px; }
+  section{ padding:96px 0; }
+  @media (max-width:720px){
+    .wrap{ padding:0 20px; }
+    section{ padding:64px 0; }
+  }
+
+  .eyebrow{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--ember);
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:18px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:22px; height:1px;
+    background:var(--ember);
+  }
+
+  .grad-rule{
+    height:2px;
+    width:100%;
+    background:var(--grad);
+    border:none;
+  }
+
+  /* ---------- nav ---------- */
+  header.site-nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(242,244,245,0.86);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line-soft);
+  }
+  .nav-inner{
+    max-width:var(--maxw); margin:0 auto; padding:0 32px;
+    height:64px; display:flex; align-items:center; justify-content:space-between;
+  }
+  .nav-mark{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:700; font-size:16px; letter-spacing:0.02em;
+    display:flex; align-items:center; gap:8px;
+  }
+  .nav-mark .dot{ width:8px; height:8px; border-radius:50%; background:var(--ember); }
+  nav.links{ display:flex; gap:28px; }
+  nav.links a{
+    font-size:13px; text-decoration:none; color:var(--text-ink-mid);
+    font-weight:500;
+    letter-spacing:0.01em;
+    transition:color .15s ease;
+    position:relative;
+  }
+  nav.links a:hover{ color:var(--text-ink-hi); }
+  nav.links a:focus-visible, a:focus-visible, button:focus-visible, summary:focus-visible{
+    outline:2px solid var(--cool); outline-offset:3px;
+  }
+  .nav-cta{
+    font-size:12px; font-family:'JetBrains Mono',monospace;
+    padding:8px 14px; border:1px solid var(--text-ink-hi);
+    border-radius:2px; text-decoration:none; white-space:nowrap;
+    transition: background .15s ease, color .15s ease;
+  }
+  .nav-cta:hover{ background:var(--text-ink-hi); color:var(--paper); }
+  @media (max-width:860px){
+    nav.links{ display:none; }
+  }
+
+  /* ---------- hero ---------- */
+  .hero{
+    background: var(--ink);
+    color: var(--text-hi);
+    padding:120px 0 0 0;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero .wrap{ position:relative; z-index:2; padding-bottom:64px;}
+  .hero-eyebrow{
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px; letter-spacing:0.16em; text-transform:uppercase;
+    color:var(--text-mid); margin-bottom:22px;
+  }
+  .hero-eyebrow span{ color:var(--cool); }
+  .hero h1{
+    font-size:clamp(40px, 6.4vw, 84px);
+    font-weight:700;
+    line-height:0.98;
+    color:var(--text-hi);
+  }
+  .hero h1 em{
+    font-style:normal;
+    background: var(--grad);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+  .hero .role{
+    margin-top:22px;
+    font-size:clamp(16px,2vw,20px);
+    color:var(--text-mid);
+    max-width:640px;
+    font-weight:500;
+  }
+  .hero .lede{
+    margin-top:26px;
+    max-width:640px;
+    color:var(--text-mid);
+    font-size:15px;
+    line-height:1.7;
+  }
+  .hero-actions{
+    margin-top:38px;
+    display:flex; gap:14px; flex-wrap:wrap;
+  }
+  .btn{
+    font-family:'JetBrains Mono',monospace;
+    font-size:12.5px;
+    padding:13px 20px;
+    text-decoration:none;
+    border-radius:2px;
+    display:inline-flex; align-items:center; gap:8px;
+    transition: transform .15s ease, background .15s ease, border-color .15s ease;
+  }
+  .btn-primary{ background:var(--ember); color:#fff; }
+  .btn-primary:hover{ background:#a8390c; transform:translateY(-1px); }
+  .btn-ghost{ border:1px solid rgba(244,246,247,0.28); color:var(--text-hi); }
+  .btn-ghost:hover{ border-color:var(--text-hi); transform:translateY(-1px); }
+
+  /* readouts */
+  .readouts{
+    margin-top:64px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    border-top:1px solid var(--line);
+  }
+  .readout{
+    padding:22px 22px 26px 0;
+    border-right:1px solid var(--line);
+  }
+  .readout:last-child{ border-right:none; }
+  .readout .val{
+    font-family:'JetBrains Mono',monospace;
+    font-size:clamp(22px,2.6vw,30px);
+    font-weight:600;
+    color:var(--text-hi);
+  }
+  .readout .val .u{ color:var(--cool); font-size:0.55em; margin-left:2px;}
+  .readout .lbl{
+    margin-top:8px;
+    font-size:11.5px;
+    color:var(--text-mid);
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+  }
+  @media (max-width:760px){
+    .readouts{ grid-template-columns:repeat(2,1fr); }
+    .readout{ padding-top:18px; padding-bottom:18px; }
+    .readout:nth-child(2n){ border-right:none; }
+    .readout:nth-child(1),.readout:nth-child(2){ border-top:none; }
+  }
+
+  .spectrum-bar{ height:3px; width:100%; background:var(--grad); }
+
+  /* ---------- profile ---------- */
+  .profile-grid{
+    display:grid;
+    grid-template-columns: 300px 1fr;
+    gap:64px;
+  }
+  @media (max-width:820px){ .profile-grid{ grid-template-columns:1fr; gap:32px; } }
+  .profile-grid h2{ font-size:34px; }
+  .profile-text{
+    font-size:16.5px;
+    color:var(--text-ink-mid);
+    line-height:1.75;
+  }
+  .profile-text p + p{ margin-top:16px; }
+  .visa-tag{
+    display:inline-flex; align-items:center; gap:8px;
+    margin-top:26px;
+    padding:10px 14px;
+    background:var(--cool-soft);
+    border:1px solid rgba(46,143,163,0.35);
+    border-radius:2px;
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px;
+    color:#1F6A79;
+  }
+  .visa-tag .pulse{
+    width:7px; height:7px; border-radius:50%; background:var(--cool);
+  }
+
+  /* ---------- expertise ---------- */
+  .bg-dark{ background:var(--ink); color:var(--text-hi); }
+  .bg-dark .eyebrow{ color:var(--ember); }
+  .bg-dark h2{ color:var(--text-hi); }
+  .expertise-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+    margin-top:40px;
+  }
+  @media (max-width:720px){ .expertise-grid{ grid-template-columns:1fr; } }
+  .expertise-card{
+    background:var(--ink);
+    padding:28px 30px;
+  }
+  .expertise-card .idx{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px; color:var(--cool);
+  }
+  .expertise-card h3{
+    margin-top:12px;
+    font-size:18px;
+    font-weight:600;
+    color:var(--text-hi);
+  }
+
+  /* ---------- timeline (experience) ---------- */
+  .timeline{ margin-top:48px; position:relative; }
+  .tl-item{
+    display:grid;
+    grid-template-columns: 170px 28px 1fr;
+    gap:0 24px;
+    padding-bottom:44px;
+    position:relative;
+  }
+  .tl-item:last-child{ padding-bottom:0; }
+  .tl-date{
+    font-family:'JetBrains Mono',monospace;
+    font-size:12.5px;
+    color:var(--text-ink-mid);
+    padding-top:3px;
+  }
+  .tl-rail{ display:flex; flex-direction:column; align-items:center; }
+  .tl-dot{
+    width:11px; height:11px; border-radius:50%;
+    margin-top:3px;
+    box-shadow:0 0 0 4px var(--paper);
+    flex-shrink:0;
+    z-index:1;
+  }
+  .tl-line{ width:1px; flex:1; background:var(--line-soft); margin-top:4px; }
+  .tl-body h3{ font-size:19px; font-weight:600; }
+  .tl-body .org{
+    font-size:13.5px; color:var(--text-ink-mid); margin-top:4px; font-weight:500;
+  }
+  .tl-body ul{ margin:14px 0 0 0; padding-left:18px; color:var(--text-ink-mid); font-size:14.5px; }
+  .tl-body li{ margin-bottom:6px; }
+  @media (max-width:640px){
+    .tl-item{ grid-template-columns: 22px 1fr; }
+    .tl-date{ display:none; }
+  }
+
+  /* ---------- education ---------- */
+  .edu-grid{ margin-top:40px; display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line-soft); border:1px solid var(--line-soft); }
+  @media (max-width:820px){ .edu-grid{ grid-template-columns:1fr; } }
+  .edu-card{ background:var(--paper); padding:26px 26px; }
+  .edu-card .yr{ font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--ember); }
+  .edu-card h3{ margin-top:10px; font-size:16.5px; font-weight:600; line-height:1.3; }
+  .edu-card .inst{ margin-top:8px; font-size:13.5px; color:var(--text-ink-mid); }
+  .edu-card .diss{ margin-top:12px; font-size:12.5px; color:var(--text-dim); font-style:italic; line-height:1.5; }
+
+  /* ---------- grants ---------- */
+  .grant-total{
+    margin-top:8px;
+    font-family:'JetBrains Mono',monospace;
+    font-size:13px; color:var(--cool);
+  }
+  table.grants{
+    width:100%; border-collapse:collapse; margin-top:36px; font-size:14px;
+  }
+  table.grants th{
+    text-align:left; font-family:'JetBrains Mono',monospace; font-size:11px;
+    text-transform:uppercase; letter-spacing:0.05em; color:var(--text-dim);
+    font-weight:500; padding:0 16px 12px 0; border-bottom:1px solid var(--line-soft);
+  }
+  table.grants td{
+    padding:16px 16px 16px 0; border-bottom:1px solid var(--line-soft);
+    vertical-align:top; color:var(--text-ink-mid);
+  }
+  table.grants td:first-child{ color:var(--text-ink-hi); font-weight:500; }
+  table.grants td.num{ font-family:'JetBrains Mono',monospace; color:var(--ember); white-space:nowrap; }
+  table.grants td.role{ font-family:'JetBrains Mono',monospace; font-size:12px; white-space:nowrap; }
+  @media (max-width:720px){
+    table.grants thead{ display:none; }
+    table.grants, table.grants tbody, table.grants tr, table.grants td{ display:block; width:100%; }
+    table.grants tr{ padding:16px 0; border-bottom:1px solid var(--line-soft); }
+    table.grants td{ border:none; padding:4px 0; }
+  }
+
+  /* ---------- publications ---------- */
+  .pub-list{ margin-top:40px; display:flex; flex-direction:column; }
+  .pub{
+    display:grid;
+    grid-template-columns: 40px 1fr 90px;
+    gap:20px;
+    padding:20px 0;
+    border-bottom:1px solid var(--line-soft);
+    align-items:start;
+  }
+  @media (max-width:700px){ .pub{ grid-template-columns: 28px 1fr; } .pub .pub-if{ display:none; } }
+  .pub .pub-n{ font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--text-dim); padding-top:3px; }
+  .pub .pub-title{ font-size:15px; font-weight:500; line-height:1.5; }
+  .pub .pub-meta{ margin-top:6px; font-size:12.5px; color:var(--text-ink-mid); }
+  .badge{
+    display:inline-block; font-family:'JetBrains Mono',monospace; font-size:10.5px;
+    padding:2px 6px; border-radius:2px; margin-right:6px; letter-spacing:0.03em;
+  }
+  .badge-esi{ background:var(--ember-soft); color:#8C3309; }
+  .badge-corr{ background:var(--cool-soft); color:#1F6A79; }
+  .pub-if{ text-align:right; font-family:'JetBrains Mono',monospace; font-size:13px; padding-top:3px; }
+  .pub-if .iflabel{ display:block; font-size:9.5px; color:var(--text-dim); text-transform:uppercase; }
+
+  details.full-pubs{ margin-top:12px; }
+  details.full-pubs summary{
+    cursor:pointer;
+    list-style:none;
+    display:inline-flex; align-items:center; gap:10px;
+    font-family:'JetBrains Mono',monospace;
+    font-size:13px;
+    color:var(--text-ink-hi);
+    padding:14px 0;
+    border-top:1px solid var(--line-soft);
+    margin-top:28px; width:100%;
+  }
+  details.full-pubs summary::-webkit-details-marker{ display:none; }
+  details.full-pubs summary::before{
+    content:"+"; font-size:16px; color:var(--ember); width:16px; display:inline-block;
+  }
+  details.full-pubs[open] summary::before{ content:"–"; }
+  .full-pub-group{ margin-top:20px; }
+  .full-pub-group h4{
+    font-family:'JetBrains Mono',monospace; font-size:11px; text-transform:uppercase;
+    letter-spacing:0.06em; color:var(--ember); margin-bottom:14px;
+  }
+  .full-pub-item{
+    font-size:13.5px; color:var(--text-ink-mid); padding:10px 0; border-bottom:1px solid var(--line-soft);
+    line-height:1.55;
+  }
+  .full-pub-item .fp-if{ font-family:'JetBrains Mono',monospace; font-size:11.5px; color:var(--text-dim); }
+  .full-pub-item a{ color:var(--cool); text-decoration:none; word-break:break-all; }
+  .full-pub-item a:hover{ text-decoration:underline; }
+
+  /* ---------- editorial / two-col lists ---------- */
+  .col2{ display:grid; grid-template-columns:1fr 1fr; gap:48px; margin-top:40px; }
+  @media (max-width:760px){ .col2{ grid-template-columns:1fr; gap:32px; } }
+  .list-block h3{
+    font-size:13px; font-family:'JetBrains Mono',monospace; text-transform:uppercase;
+    letter-spacing:0.05em; color:var(--ember); margin-bottom:16px;
+  }
+  .list-block ul{ list-style:none; margin:0; padding:0; }
+  .list-block li{
+    padding:12px 0; border-bottom:1px solid var(--line-soft);
+    font-size:14.5px; color:var(--text-ink-mid);
+  }
+  .list-block li strong{ color:var(--text-ink-hi); font-weight:600; display:block; margin-bottom:2px;}
+
+  /* ---------- teaching ---------- */
+  .teach-grid{ margin-top:40px; display:grid; grid-template-columns:1fr 1fr; gap:32px; }
+  @media (max-width:760px){ .teach-grid{ grid-template-columns:1fr; } }
+  .chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+  .chip{
+    font-family:'JetBrains Mono',monospace; font-size:12px;
+    padding:7px 12px; border:1px solid var(--line-soft); border-radius:2px;
+    color:var(--text-ink-mid);
+  }
+
+  /* ---------- collaborations map-ish list ---------- */
+  .collab-grid{
+    margin-top:40px; display:grid; grid-template-columns:repeat(3,1fr); gap:1px;
+    background:var(--line-soft); border:1px solid var(--line-soft);
+  }
+  @media (max-width:820px){ .collab-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:520px){ .collab-grid{ grid-template-columns:1fr; } }
+  .collab-card{ background:var(--paper); padding:22px; }
+  .collab-card .name{ font-weight:600; font-size:14.5px; }
+  .collab-card .aff{ font-size:12.5px; color:var(--text-ink-mid); margin-top:6px; line-height:1.5; }
+
+  /* ---------- languages ---------- */
+  .lang-row{ display:flex; gap:36px; margin-top:36px; flex-wrap:wrap; }
+  .lang-item{ min-width:160px; }
+  .lang-item .name{ font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:600; }
+  .lang-bar{ height:4px; width:100%; background:var(--line-soft); border-radius:2px; margin-top:10px; overflow:hidden; }
+  .lang-bar i{ display:block; height:100%; background:var(--grad); }
+  .lang-item .lvl{ margin-top:8px; font-size:11.5px; color:var(--text-dim); text-transform:uppercase; letter-spacing:0.04em; }
+  .diversity-note{ margin-top:32px; font-size:14px; color:var(--text-ink-mid); max-width:680px; line-height:1.7; }
+
+  /* ---------- references ---------- */
+  .ref-grid{ margin-top:40px; display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+  @media (max-width:820px){ .ref-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:560px){ .ref-grid{ grid-template-columns:1fr; } }
+  .ref-card{ border-top:2px solid var(--line-soft); padding-top:16px; }
+  .ref-card .name{ font-weight:600; font-size:15px; }
+  .ref-card .title{ font-size:12.5px; color:var(--text-ink-mid); margin-top:6px; line-height:1.5; }
+  .ref-note{ margin-top:28px; font-size:12.5px; color:var(--text-dim); font-family:'JetBrains Mono',monospace; }
+
+  /* ---------- contact / footer ---------- */
+  footer{
+    background:var(--ink); color:var(--text-hi); padding:88px 0 40px 0;
+  }
+  .contact-grid{ display:grid; grid-template-columns:1.3fr 1fr; gap:48px; }
+  @media (max-width:760px){ .contact-grid{ grid-template-columns:1fr; } }
+  footer h2{ color:var(--text-hi); font-size:36px; }
+  .contact-links{ margin-top:28px; display:flex; flex-direction:column; gap:14px; }
+  .contact-links a{
+    text-decoration:none; color:var(--text-hi); font-size:15px; display:flex; align-items:center; gap:10px;
+    border-bottom:1px solid transparent; width:fit-content; padding-bottom:2px;
+    transition:border-color .15s ease;
+  }
+  .contact-links a:hover{ border-color:var(--cool); }
+  .contact-links .k{ font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--text-mid); min-width:64px; text-transform:uppercase; letter-spacing:0.05em; }
+  .base-note{ font-size:13px; color:var(--text-mid); margin-top:28px; line-height:1.7; }
+  .foot-bottom{
+    margin-top:72px; padding-top:24px; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;
+    font-size:12px; color:var(--text-dim); font-family:'JetBrains Mono',monospace;
+  }
+
+  /* reveal animation */
+  .reveal{ opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease; }
+  .reveal.in{ opacity:1; transform:none; }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <div class="nav-mark"><span class="dot"></span>S. MOHTARAM</div>
+    <nav class="links">
+      <a href="#profile">Profile</a>
+      <a href="#experience">Experience</a>
+      <a href="#publications">Publications</a>
+      <a href="#grants">Grants</a>
+      <a href="#collaborations">Collaborations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Get in touch →</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-eyebrow">Distinguished Associate Professor <span>·</span> <span>Clean Energy &amp; Thermal Systems</span></div>
+    <h1>Soheil<br><em>Mohtaram</em></h1>
+    <p class="role">Sammy — thermal systems researcher working across heat pumps, EV thermal management, solar-thermal integration, CO₂ capture and energy storage.</p>
+    <p class="lede">Holder of the UK Global Talent Visa (no sponsorship required). Author of 60+ SCI-indexed journal articles — including 3 ESI Highly Cited / Hot Papers — in journals with impact factors up to 23.5, with active collaborations spanning Imperial College London, the University of Manchester, and institutions across five continents.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#contact">Start a conversation</a>
+      <a class="btn btn-ghost" href="#publications">View publications</a>
+    </div>
+
+    <div class="readouts">
+      <div class="readout"><div class="val">60<span class="u">+</span></div><div class="lbl">SCI journal articles</div></div>
+      <div class="readout"><div class="val">3</div><div class="lbl">ESI hot / highly cited papers</div></div>
+      <div class="readout"><div class="val">23.5</div><div class="lbl">Highest journal impact factor</div></div>
+      <div class="readout"><div class="val">£88<span class="u">K</span></div><div class="lbl">Research funding secured as PI</div></div>
+    </div>
+  </div>
+  <div class="spectrum-bar"></div>
+</section>
+
+<section id="profile">
+  <div class="wrap">
+    <div class="profile-grid reveal">
+      <div>
+        <div class="eyebrow">Profile</div>
+        <h2>Bridging<br>research and<br>Net Zero policy</h2>
+      </div>
+      <div class="profile-text">
+        <p>Distinguished Associate Professor (Tenure-Track) with an internationally recognised research record in clean energy, thermal systems and sustainable energy conversion. Proven Principal Investigator securing over £88,000 in competitive research grants, with active collaborations at Imperial College London, the University of Manchester, and leading institutions across five continents.</p>
+        <p>Accomplished bilingual educator (English–Chinese) with PhD student supervision, curriculum development, keynote speaking, and full-authority academic editorial roles. Research is directly aligned with UK Net Zero priorities: advanced heat pump systems, EV thermal management, solar-thermal integration, CO₂ capture, and energy storage.</p>
+        <div class="visa-tag"><span class="pulse"></span>UK Global Talent Visa — no sponsorship required</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-dark">
+  <div class="wrap">
+    <div class="eyebrow reveal">Research Expertise</div>
+    <h2 class="reveal" style="font-size:34px; max-width:560px;">Where the physics meets the priority list.</h2>
+    <div class="expertise-grid reveal">
+      <div class="expertise-card"><div class="idx">01</div><h3>Solar, hybrid &amp; geothermal energy systems</h3></div>
+      <div class="expertise-card"><div class="idx">02</div><h3>EV thermal management — heat pumps, CO₂ &amp; R290 systems</h3></div>
+      <div class="expertise-card"><div class="idx">03</div><h3>Li-ion battery safety &amp; thermal runaway prevention</h3></div>
+      <div class="expertise-card"><div class="idx">04</div><h3>CO₂ capture, photocatalytic conversion &amp; environmental sustainability</h3></div>
+      <div class="expertise-card"><div class="idx">05</div><h3>Thermodynamic cycle optimisation — 4E analysis, NSGA-II</h3></div>
+      <div class="expertise-card"><div class="idx">06</div><h3>Machine learning for thermal system diagnostics &amp; control</h3></div>
+      <div class="expertise-card"><div class="idx">07</div><h3>Distributed energy networks &amp; advanced thermal energy storage</h3></div>
+      <div class="expertise-card"><div class="idx">08</div><h3>Nanofluid-enhanced heat transfer &amp; MOF nanomaterials</h3></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="eyebrow reveal">Academic Appointment</div>
+    <h2 class="reveal" style="font-size:34px;">Experience, most recent first</h2>
+    <div class="timeline reveal">
+
+      <div class="tl-item">
+        <div class="tl-date">Jul 2026 — Present</div>
+        <div class="tl-rail"><div class="tl-dot" style="background:var(--ember);"></div><div class="tl-line"></div></div>
+        <div class="tl-body">
+          <h3>Associate Researcher</h3>
+          <div class="org">Teesside University · Middlesbrough, UK</div>
+          <ul>
+            <li>Invited to collaborate with NZIIC researchers on thermal energy storage systems and heat pump technologies.</li>
+            <li>Contributing to modelling, analysis and performance assessment of advanced thermal energy systems.</li>
+            <li>Co-developing joint publications and UKRI / Horizon funding proposals aligned with Net Zero priorities.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date">Mar 2026 — Present</div>
+        <div class="tl-rail"><div class="tl-dot" style="background:#B15B24;"></div><div class="tl-line"></div></div>
+        <div class="tl-body">
+          <h3>Distinguished Associate Professor (Tenure-Track)</h3>
+          <div class="org">University of Shanghai for Science &amp; Technology (USST) · Shanghai, China</div>
+          <ul>
+            <li>Leads independent research programmes in clean thermal and renewable energy systems, managing an active group of MSc and PhD students.</li>
+            <li>Delivers undergraduate and postgraduate modules: Heat Transfer; Scientific Writing for Academic Publishing (bilingual English–Chinese).</li>
+            <li>Mentors postgraduate researchers to peer-reviewed publication and conference-prize success.</li>
+            <li>Drives curriculum development integrating sustainability and Net Zero principles into core engineering programmes.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date">Dec 2024 — Mar 2026</div>
+        <div class="tl-rail"><div class="tl-dot" style="background:#8C6D57;"></div><div class="tl-line"></div></div>
+        <div class="tl-body">
+          <h3>Assistant Professor (Tenure-Track)</h3>
+          <div class="org">University of Shanghai for Science &amp; Technology (USST) · Shanghai, China</div>
+          <ul>
+            <li>Established an independent research group from inception; secured external grant funding within six months of appointment.</li>
+            <li>Designed and delivered a bilingual (English–Chinese) technical writing course for postgraduate engineers.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date">Dec 2021 — Nov 2024</div>
+        <div class="tl-rail"><div class="tl-dot" style="background:#5C8A97;"></div><div class="tl-line"></div></div>
+        <div class="tl-body">
+          <h3>Postdoctoral Research Associate</h3>
+          <div class="org">University of Shanghai for Science &amp; Technology (USST) · Shanghai, China</div>
+          <ul>
+            <li>Principal Investigator, Shanghai Super Postdoctoral Excellence Programme (Grant No. 2021289 — 300,000 RMB / ~£32,600) on advanced multi-mixture thermal energy systems.</li>
+            <li>Produced 10+ SCI-indexed articles; built international research collaborations across five countries.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date">Jan 2020 — Oct 2021</div>
+        <div class="tl-rail"><div class="tl-dot" style="background:var(--cool);"></div></div>
+        <div class="tl-body">
+          <h3>Postdoctoral Research Associate</h3>
+          <div class="org">Hohai University · Nanjing, China</div>
+          <ul>
+            <li>Conducted research on combined power cycles, heat recovery systems and thermodynamic optimisation.</li>
+            <li>Principal Investigator, Hohai University Postdoctoral Grant (50,000 RMB / ~£5,400) — Optimal Design of Heat Recovery Boiler &amp; 4E Analysis of Combined Cycle with Steam Injection.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--paper-2);">
+  <div class="wrap">
+    <div class="eyebrow reveal">Education</div>
+    <h2 class="reveal" style="font-size:34px;">Foundations</h2>
+    <div class="edu-grid reveal">
+      <div class="edu-card">
+        <div class="yr">2015 – 2019</div>
+        <h3>PhD, Engineering Mechanics</h3>
+        <div class="inst">Hohai University · Nanjing, China</div>
+        <div class="diss">Dissertation: Multi-Objective Evolutionary Optimisation and Sophisticated 2E/4E Analysis on Dual Mixture Energy System Compilations</div>
+      </div>
+      <div class="edu-card">
+        <div class="yr">2012 – 2015</div>
+        <h3>MSc, Mechanical Engineering (Energy Conversion)</h3>
+        <div class="inst">Islamic Azad University · Iran</div>
+      </div>
+      <div class="edu-card">
+        <div class="yr">2008 – 2012</div>
+        <h3>BSc, Mechanical Engineering</h3>
+        <div class="inst">Islamic Azad University · Iran</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="grants">
+  <div class="wrap">
+    <div class="eyebrow reveal">Research Grants &amp; Funding</div>
+    <h2 class="reveal" style="font-size:34px;">Secured as Principal Investigator</h2>
+    <div class="grant-total reveal">TOTAL AS PI: ~810,000 RMB / ~£88,000</div>
+    <table class="grants reveal">
+      <thead><tr><th>Programme</th><th>Value</th><th>Period</th><th>Role</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Shanghai Partnership Research Programme — Innovative Multi-Energy Collaborative Distributed Network for Optimised Intelligent Regional Energy Systems (Partner: Dongguk University, Seoul) — Grant No. 25HB2709600</td>
+          <td class="num">400,000 RMB / ~£43,500</td>
+          <td>2025 – 2027</td>
+          <td class="role">PI</td>
+        </tr>
+        <tr>
+          <td>Shanghai Super Postdoctoral Excellence Programme — Advanced Multi-Mixture Thermal Energy Systems — Grant No. 2021289</td>
+          <td class="num">300,000 RMB / ~£32,600</td>
+          <td>2022 – 2023</td>
+          <td class="role">PI</td>
+        </tr>
+        <tr>
+          <td>Hohai University Postdoctoral Grant — Optimal Design of Heat Recovery Boiler and 4E Analysis of Combined Cycle with Steam Injection</td>
+          <td class="num">50,000 RMB / ~£5,400</td>
+          <td>2020 – 2021</td>
+          <td class="role">PI</td>
+        </tr>
+        <tr>
+          <td>USST Teaching Special Project — Scientific &amp; Technical English Writing for Energy and Power Engineering — Grant No. 20-20-126-001</td>
+          <td class="num">5,000 RMB / ~£500</td>
+          <td>2026</td>
+          <td class="role">PI</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="publications" class="bg-dark">
+  <div class="wrap">
+    <div class="eyebrow reveal">Selected Publications</div>
+    <h2 class="reveal" style="font-size:34px; max-width:600px;">60+ SCI articles · 3 ESI highly cited / hot papers</h2>
+    <p class="reveal" style="margin-top:16px; color:var(--text-mid); font-size:14px; max-width:640px;">* = Corresponding author &nbsp;·&nbsp; [ESI] = ESI Highly Cited / Hot Paper. Full list in appendix below.</p>
+
+    <div class="pub-list reveal">
+      <div class="pub">
+        <div class="pub-n">01</div>
+        <div>
+          <div class="pub-title">MOF-Derived Nanomaterials: Transformative Innovations for Renewable Energy and Environmental Sustainability</div>
+          <div class="pub-meta"><span class="badge badge-esi">ESI</span><span class="badge badge-corr">Corr. Author</span>Coordination Chemistry Reviews, 546, 217083 (2026)</div>
+        </div>
+        <div class="pub-if"><span class="iflabel">IF</span>23.5</div>
+      </div>
+      <div class="pub">
+        <div class="pub-n">02</div>
+        <div>
+          <div class="pub-title">Multi-Objective Evolutionary Optimisation &amp; 4E Analysis of a Combined Cycle Power Plant by CO₂/CO/NOx Reduction and Cost Targets</div>
+          <div class="pub-meta"><span class="badge badge-esi">ESI Hot Paper</span><span class="badge badge-corr">Corr. Author</span>Renewable and Sustainable Energy Reviews, 128, 109898 (2020)</div>
+        </div>
+        <div class="pub-if"><span class="iflabel">IF</span>16.3</div>
+      </div>
+      <div class="pub">
+        <div class="pub-n">03</div>
+        <div>
+          <div class="pub-title">Enhancement Strategies in CO₂ Conversion and Management of Biochar Supported Photocatalyst</div>
+          <div class="pub-meta"><span class="badge badge-esi">ESI Highly Cited</span><span class="badge badge-corr">Corr. Author</span>Energy Conversion and Management, 300, 117987 (2024)</div>
+        </div>
+        <div class="pub-if"><span class="iflabel">IF</span>10.4</div>
+      </div>
+      <div class="pub">
+        <div class="pub-n">04</div>
+        <div>
+          <div class="pub-title">Ultra-Efficient Solar-to-Electric Conversion via Hierarchical Thermoelectric Energy Cascading</div>
+          <div class="pub-meta"><span class="badge badge-corr">Corr. Author</span>Energy Conversion and Management, 351, 120999 (2026)</div>
+        </div>
+        <div class="pub-if"><span class="iflabel">IF</span>10.9</div>
+      </div>
+      <div class="pub">
+        <div class="pub-n">05</div>
+        <div>
+          <div class="pub-title">Refrigerant Charge Optimisation and Thermal Performance Evaluation of R290-Based Secondary Loop System for EVs</div>
+          <div class="pub-meta"><span class="badge badge-corr">Corr. Author</span>Energy, 138570 (2025)</div>
+        </div>
+        <div class="pub-if"><span class="iflabel">IF</span>9.4</div>
+      </div>
+      <div class="pub">
+        <div class="pub-n">06</div>
+        <div>
+          <div class="pub-title">Thermodynamic Analysis of a Geothermal-Driven Quadruple-Production System for Power, Heat, Freshwater and Hydrogen</div>
+          <div class="pub-meta"><span class="badge badge-corr">Corr. Author</span>Renewable Energy, 245, 122847 (2025)</div>
+        </div>
+        <div class="pub-if"><span class="iflabel">IF</span>9.0</div>
+      </div>
+      <div class="pub">
+        <div class="pub-n">07</div>
+        <div>
+          <div class="pub-title">A New Wind and Solar-Based Diversified Energy Production System Integrating Absorption Refrigeration, ORC and SRC Cycles</div>
+          <div class="pub-meta"><span class="badge badge-corr">Corr. Author</span>Renewable Energy, 199, 179–191 (2022)</div>
+        </div>
+        <div class="pub-if"><span class="iflabel">IF</span>9.0</div>
+      </div>
+      <div class="pub">
+        <div class="pub-n">08</div>
+        <div>
+          <div class="pub-title">Energy and Exergy Assessment of a Two-Stage ORC for Recovering SFGC Waste Heat and LNG Cold Energy</div>
+          <div class="pub-meta"><span class="badge badge-corr">Corr. Author</span>Energy, 264, 126191 (2023)</div>
+        </div>
+        <div class="pub-if"><span class="iflabel">IF</span>8.9</div>
+      </div>
+      <div class="pub">
+        <div class="pub-n">09</div>
+        <div>
+          <div class="pub-title">Reversible Overcharge Threshold and Multi-Parameter Early Warning Strategy for Thermal Runaway Prevention in Li-Ion Batteries</div>
+          <div class="pub-meta"><span class="badge badge-corr">Corr. Author</span>Applied Thermal Engineering, 284, 129083 (2026)</div>
+        </div>
+        <div class="pub-if"><span class="iflabel">IF</span>6.9</div>
+      </div>
+      <div class="pub">
+        <div class="pub-n">10</div>
+        <div>
+          <div class="pub-title">Investigation of the Combined Rankine-Absorption Power and Refrigeration Cycles Using Parametric Analysis and Genetic Algorithm</div>
+          <div class="pub-meta">Energy Conversion and Management, 150, 754–762 (2017)</div>
+        </div>
+        <div class="pub-if"><span class="iflabel">IF</span>9.9</div>
+      </div>
+    </div>
+
+    <details class="full-pubs">
+      <summary>View full publication list — SCI articles, conference papers &amp; book chapters</summary>
+      <div id="full-pub-content">
+        <div class="full-pub-group">
+          <h4>A. Peer-Reviewed SCI Journal Papers</h4>
+          <div id="sci-list"></div>
+        </div>
+        <div class="full-pub-group">
+          <h4>B. Peer-Reviewed Conference Papers</h4>
+          <div id="conf-list"></div>
+        </div>
+        <div class="full-pub-group">
+          <h4>C. Book Chapters</h4>
+          <div id="book-list"></div>
+        </div>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow reveal">Editorial, Peer Review &amp; Leadership</div>
+    <h2 class="reveal" style="font-size:34px;">Academic service</h2>
+    <div class="col2 reveal">
+      <div class="list-block">
+        <h3>Editorial roles</h3>
+        <ul>
+          <li><strong>Academic Editor (Full Decision Authority)</strong>PLOS ONE — 2024 to present</li>
+          <li><strong>Editorial Board Member</strong>Scientific Reports, Springer Nature — 2026 to present</li>
+          <li><strong>Editorial Board Member</strong>Thermal Science &amp; Engineering Progress, Elsevier — 2021–2026</li>
+          <li><strong>Editorial Board Member</strong>Energy Engineering Journal · Journal of AEE · Journal of Robotics &amp; Mechanical Engineering · Applied Engineering</li>
+        </ul>
+      </div>
+      <div class="list-block">
+        <h3>Peer review &amp; guest editing</h3>
+        <ul>
+          <li><strong>700+ reviews</strong>Across 70+ SCI journals, including Energy, Applied Thermal Engineering, Renewable Energy, and Renewable &amp; Sustainable Energy Reviews</li>
+          <li><strong>Guest Editor, Special Issues</strong>Materials Research Express (SCI) · Advances in Mechanical Engineering (SCI) · Thermal Science and Engineering Journal (EI) · Journal of Architectural Environment &amp; Structural Engineering Research</li>
+        </ul>
+        <h3 style="margin-top:32px;">Conference leadership</h3>
+        <ul>
+          <li><strong>Keynote Speaker</strong>Global Power Energies Congress, London, UK — November 2025</li>
+          <li><strong>Keynote Speaker</strong>International Symposium on Safety, Xi'an, China — 2024</li>
+          <li><strong>Publicity Chair</strong>6th International Conference on Mechanical Engineering &amp; Applied Composite Materials, China — 2023</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--paper-2);">
+  <div class="wrap">
+    <div class="eyebrow reveal">Teaching, Curriculum &amp; Supervision</div>
+    <h2 class="reveal" style="font-size:34px;">In the classroom &amp; the lab</h2>
+    <div class="teach-grid reveal">
+      <div>
+        <h3 style="font-size:14px; font-family:'JetBrains Mono',monospace; text-transform:uppercase; letter-spacing:0.04em; color:var(--ember);">Undergraduate modules</h3>
+        <div class="chips">
+          <span class="chip">Thermodynamics I &amp; II</span>
+          <span class="chip">Heat Transfer</span>
+          <span class="chip">Fluid Mechanics</span>
+          <span class="chip">Scientific Writing for Academic Publishing</span>
+        </div>
+        <p style="margin-top:22px; font-size:14.5px; color:var(--text-ink-mid); line-height:1.7;">Designed and delivers a bilingual (English–Chinese) technical writing programme for postgraduate engineers, and has integrated UK Net Zero sustainability principles into core energy engineering curricula.</p>
+      </div>
+      <div>
+        <h3 style="font-size:14px; font-family:'JetBrains Mono',monospace; text-transform:uppercase; letter-spacing:0.04em; color:var(--ember);">Postgraduate supervision</h3>
+        <p style="font-size:14.5px; color:var(--text-ink-mid); line-height:1.7;">Supervises MSc and PhD students working on EV thermal systems, solar thermal, and hybrid energy cycles — with students guided to peer-reviewed publications and international conference prizes.</p>
+        <p style="margin-top:16px; font-size:14.5px; color:var(--text-ink-mid); line-height:1.7;">Committed to inclusive, evidence-based teaching in multicultural, bilingual settings, and an active mentor for early-career researchers from underrepresented groups.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="collaborations">
+  <div class="wrap">
+    <div class="eyebrow reveal">International Research Collaborations</div>
+    <h2 class="reveal" style="font-size:34px;">Five continents, one research thread</h2>
+    <div class="collab-grid reveal">
+      <div class="collab-card"><div class="name">Prof. C. N. Markides</div><div class="aff">Clean Energy Processes Laboratory<br>Imperial College London, UK</div></div>
+      <div class="collab-card"><div class="name">Prof. Yasser Mahmoudi Larimi</div><div class="aff">Thermal Energy Engineering<br>University of Manchester, UK</div></div>
+      <div class="collab-card"><div class="name">Prof. Vamegh Rasouli</div><div class="aff">University of Texas at Arlington / Texas Tech, USA</div></div>
+      <div class="collab-card"><div class="name">NZIIC Collaborative Research</div><div class="aff">Teesside University, UK</div></div>
+      <div class="collab-card"><div class="name">Tsinghua University</div><div class="aff">China</div></div>
+      <div class="collab-card"><div class="name">Dongguk University</div><div class="aff">Seoul, South Korea</div></div>
+      <div class="collab-card"><div class="name">Ningbo University</div><div class="aff">China</div></div>
+    </div>
+    <p style="margin-top:28px; font-size:13.5px; color:var(--text-dim);">Active contributor to UK Sustainable Futures, Net Zero and Digitalisation research themes.</p>
+  </div>
+</section>
+
+<section style="background:var(--paper-2);">
+  <div class="wrap">
+    <div class="eyebrow reveal">Languages &amp; Diversity</div>
+    <h2 class="reveal" style="font-size:34px;">Working across cultures</h2>
+    <div class="lang-row reveal">
+      <div class="lang-item">
+        <div class="name">English</div>
+        <div class="lang-bar"><i style="width:100%;"></i></div>
+        <div class="lvl">Fluent — professional &amp; academic</div>
+      </div>
+      <div class="lang-item">
+        <div class="name">Persian</div>
+        <div class="lang-bar"><i style="width:100%;"></i></div>
+        <div class="lvl">Native</div>
+      </div>
+      <div class="lang-item">
+        <div class="name">Mandarin Chinese</div>
+        <div class="lang-bar"><i style="width:52%;"></i></div>
+        <div class="lvl">Intermediate</div>
+      </div>
+    </div>
+    <p class="diversity-note reveal">Demonstrated commitment to inclusive, bilingual, multicultural education — actively mentoring early-career researchers and promoting equitable participation in STEM, with experience delivering teaching in multinational classrooms across Asia and Europe.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow reveal">Academic References</div>
+    <h2 class="reveal" style="font-size:34px;">Available on request</h2>
+    <div class="ref-grid reveal">
+      <div class="ref-card"><div class="name">Prof. C. N. Markides</div><div class="title">Professor of Clean Energy Technologies<br>Dept. of Chemical Engineering, Imperial College London</div></div>
+      <div class="ref-card"><div class="name">Prof. Yasser Mahmoudi Larimi, FHEA</div><div class="title">Professor of Thermal Energy Engineering<br>School of Engineering, University of Manchester</div></div>
+      <div class="ref-card"><div class="name">Prof. Omid Mahian</div><div class="title">Faculty of Mechanical Engineering<br>Ningbo University, China</div></div>
+      <div class="ref-card"><div class="name">Prof. Vamegh Rasouli</div><div class="title">Professor &amp; Director, Resource &amp; Energy Engineering<br>University of Texas at Arlington, USA</div></div>
+      <div class="ref-card"><div class="name">Prof. Su Mingxu</div><div class="title">Professor &amp; Vice Dean, School of Energy and Power Engineering<br>USST, Shanghai, China</div></div>
+      <div class="ref-card"><div class="name">Prof. Sun Yonghui</div><div class="title">Professor, College of Energy and Electrical Engineering<br>Hohai University, Nanjing, China</div></div>
+    </div>
+    <p class="ref-note">Full contact details, Google Scholar and ORCID profiles provided on request.</p>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <div class="eyebrow" style="color:var(--cool);">Get in touch</div>
+        <h2>Let's talk clean<br>energy &amp; thermal<br>systems.</h2>
+        <div class="contact-links">
+          <a href="mailto:Soheilmohtaram@gmail.com"><span class="k">Email</span> Soheilmohtaram@gmail.com</a>
+          <a href="mailto:S.mohtaram@usst.du.cn"><span class="k">Email</span> S.mohtaram@usst.du.cn</a>
+          <a href="tel:+447840146199"><span class="k">UK</span> +44 7840 146199</a>
+          <a href="tel:+8613052554767"><span class="k">CN</span> +86 130 5255 4767</a>
+        </div>
+        <p class="base-note">Based between University of Shanghai for Science &amp; Technology (USST), Shanghai, and Teesside University, UK (Associate Researcher). Google Scholar and ORCID profiles available on request.</p>
+      </div>
+      <div>
+        <div class="eyebrow" style="color:var(--cool);">Snapshot</div>
+        <div class="contact-links" style="gap:18px;">
+          <div style="font-size:14px; color:var(--text-mid);"><span class="k mono" style="color:var(--cool);">h-index</span> 25 · i10-index 41</div>
+          <div style="font-size:14px; color:var(--text-mid);"><span class="k mono" style="color:var(--cool);">Citations</span> 1,900+</div>
+          <div style="font-size:14px; color:var(--text-mid);"><span class="k mono" style="color:var(--cool);">Peer reviews</span> 700+</div>
+          <div style="font-size:14px; color:var(--text-mid);"><span class="k mono" style="color:var(--cool);">Visa</span> UK Global Talent Visa holder</div>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Soheil Mohtaram</span>
+      <span>Updated April 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // reveal on scroll
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold:0.1 });
+  document.querySelectorAll('.reveal').forEach(el=> io.observe(el));
+
+  // full publication data, injected on first open for performance
+  const sciPapers = [
+    ["Mahyar Kargaran, Soheil Mohtaram*","Thermally Conductive MXene-LiBr Hydrogel for Enhanced Passive Cooling of Photovoltaic Systems in Buildings","International Communications in Heat and Mass Transfer, 178, 111978 (2026)","IF 6.2 · Corr. Author","https://doi.org/10.1016/j.icheatmasstransfer.2026.111978"],
+    ["Zahra Barbari, Saleh S. Meibodi*, Jinoop Arackal Narayanan, Soheil Mohtaram, Mohammad Ja'fari, Sina Rezaei Gomari*","A Critical Review of Risk Assessment and Control Strategies for Ammonia Storage and Handling in Maritime Decarbonisation","Journal of Marine Science and Engineering, 14(12), 1124 (2026)","IF 3.2","https://doi.org/10.3390/jmse14121124"],
+    ["Kang Li, Mengmeng Luo, Ammar Jafaripournimchahi, Saleh S. Meibodi, Zilong Wang, Hua Zhang, Chao Li, Qize He, Yi Zeng, Soheil Mohtaram*","Thermodynamic Modeling and Experimental Validation of a CO₂ Scroll Compressor for Automotive Heat Pump Systems","Energy, 360, 141659 (2026)","IF 9.4 · Corr. Author","https://doi.org/10.1016/j.energy.2026.141659"],
+    ["Li, K., Hu, J., Mohtaram, S.*, Li, X., Min, Q., Lu, Z., Zhang, H., Yan, J., He, Q., Li, C., Song, L.","Flow Regulation Strategy for Scroll Compressor in Automotive CO₂ Heat Pump Systems: Experimental and Simulation-Based Investigation","Thermal Science and Engineering Progress, 75, 104759 (2026)","IF 5.4 · Corr. Author","https://doi.org/10.1016/j.tsep.2026.104759"],
+    ["Li, X., Gu, P., Li, K., Mahian, O., Wang, J., Wang, Z., Wongwises, S., Larimi, Y. M., Mohtaram, S.","Facial Image Recognition with Spatial Attention for Thermal Fatigue and Comfort Monitoring in Drivers","Case Studies in Thermal Engineering, 81, 107878 (2026)","IF 6.4","https://doi.org/10.1016/j.csite.2026.107878"],
+    ["Zebing Chen, Yang Wang, Hong Wu, Wenbin Zhao, Jinjun Yan, Luyao Peng, Yugang Zhao, Zilong Wang, Kang Li, Saleh S. Meibodi, Mohammad Moosazadeh, Soheil Mohtaram*","Experimental Investigation on Heating Performance and Frosting Behavior of an Integrated R290 Secondary Loop Heat Pump","Frontiers in Heat and Mass Transfer (2026)","IF 0.7 · Corr. Author","https://doi.org/10.32604/fhmt.2026.077274"],
+    ["Mingjing Lei, Xiaokuan You, Kang Li, Soheil Mohtaram*","Ultra-Efficient Solar-to-Electric Conversion via Hierarchical Thermoelectric Energy Cascading: A Multi-Stage Hybrid System with Synergistic Thermal Utilization and Pareto-Optimal Performance","Energy Conversion and Management, 351, 120999 (2026)","IF 10.9 · Corr. Author","https://doi.org/10.1016/j.enconman.2025.120999"],
+    ["Gu, P., Li, K., Li, X., Chen, X., Zhang, H., Yan, J., He, Q., Song, L., Li, C., Mahian, O., Mohtaram, S.","Frost Detection in CO₂ Heat Pump Systems Using Image Recognition and Performance Metrics","Applied Thermal Engineering, 287, 129395 (2026)","IF 6.9 · Last Author","https://doi.org/10.1016/j.applthermaleng.2025.129395"],
+    ["Kang Li, Haoran Ren, Hua Zhang, Qizhong Min, Jinjun Yan, Chao Li, Liaokuo Song, Qize He, Soheil Mohtaram*","Reversible Overcharge Threshold and Multi-Parameter Early Warning Strategy for Thermal Runaway Prevention in Lithium-Ion Batteries","Applied Thermal Engineering, 284(1), 129083 (2026)","IF 6.9 · Corr. Author, Top Q2","https://doi.org/10.1016/j.applthermaleng.2025.129083"],
+    ["Kang Li, Luyao Peng, Soheil Mohtaram*, Xi Chen, Hua Zhang, Qizhong Min, Chao Li, Liaokuo Song, Qize He","Refrigerant Charge Optimization and Thermal Performance Evaluation of an R290-Based Secondary Loop System for Electric Vehicles","Energy, 138570 (2025)","IF 9.4 · Corr. Author","https://doi.org/10.1016/j.energy.2025.138570"],
+    ["Wanli Peng, Hongwei Li, Julian Gonzalez-Ayala, Soheil Mohtaram, Jun Zhang, Xuemin Sheng, Jincan Chen","A Solar-Driven Two-Stage Sodium Thermal Electrochemical Converter Coupled to a Thermoradiative Device: Parametric Optimization","Applied Thermal Engineering, 279(F), 128049 (2025)","IF 6.9 · Top Q1","https://doi.org/10.1016/j.applthermaleng.2025.128049"],
+    ["Mohtaram, M.S., Abolghasemi, A., Sayahi, S., Rajabi*, H., Mohtaram, S.*, Long, M., Sabbaghi, S.*","MOF-Derived Nanomaterials: Transformative Innovations for Renewable Energy and Environmental Sustainability","Coordination Chemistry Reviews, 546, 217083 (2026)","IF 23.5 · Corr. Author","https://doi.org/10.1016/j.ccr.2025.217083"],
+    ["Kang Li, Lin Wu, Soheil Mohtaram*, Yafen Tian, Ni Liu, Hua Zhang, Jinjun Yan, Qize He, Chao Li, Tao Yang","Performance Study of Automotive Heat Pump System with Different Refrigerants and Leakage Combustion Characteristics of R290","International Journal of Refrigeration, 180, 65–78 (2025)","IF 3.8 · Corr. Author","https://doi.org/10.1016/j.ijrefrig.2025.08.019"],
+    ["Mingjing Lei, Soheil Mohtaram*, Li Kang, Su Ming Xu","Thermal and Environmental-Economic Optimization of LS-2 Solar Collectors with Dimpled Receivers in a Nine-Receiver Configuration","Applied Thermal Engineering, 279(C), 127709 (2025)","IF 6.9 · Corr. Author","https://doi.org/10.1016/j.applthermaleng.2025.127709"],
+    ["Kang Li, Mingfei Tan, Soheil Mohtaram*, Ni Liu, Hua Zhang, Zhuohan Lu, Jinjun Yan, Qize He, Chao Li","Experimental Study on Dehumidification and Heating Performance of CO₂ Heat Pump System for Electric Vehicles at Low Ambient Temperatures (5°C and 15°C)","International Journal of Refrigeration, 178, 170–179 (2025)","IF 6.1 · Corr. Author","https://doi.org/10.1016/j.ijrefrig.2025.06.029"],
+    ["Kang Li, Zhaotiannuo Tan, Soheil Mohtaram*, Yafen Tian, Ni Liu, Hua Zhang, Jinjun Yan, Qize He, Chao Li, Tao Yang","Injection Performance Analysis of Scroll Compressors with Varying Cylinder Configurations for Electric Vehicle Applications: An Experimental Approach","International Journal of Refrigeration, 177, 65–78 (2025)","IF 6.1 · Corr. Author","https://doi.org/10.1016/j.ijrefrig.2025.05.016"],
+    ["Xinzhou Li, Soheil Mohtaram*, Ali Keçebaş, Kang Li, Minxu Su, Mehmet Yumurtacı, Yashar Aryanfar","Thermodynamic Analysis and Optimization of an Optimized Geothermal-Driven Quadruple-Production System for Sustainable Power, Heat, Freshwater, and Hydrogen Production","Renewable Energy, 245, 122847 (2025)","IF 9.0 · Corr. Author","https://doi.org/10.1016/j.renene.2025.122847"],
+    ["Kang Li, Fanyue Kong, Ni Liu, Hua Zhang, Binlin Dou, Chao Li, Qize He, Yafen Tian, Ran Tu, Soheil Mohtaram*, Xuejin Zhou","Frosting Characteristics and Performance Impact on R744 Heat Pump Systems for Electric Vehicles at Low Ambient Temperatures: An Experimental Approach","Applied Thermal Engineering, 266, 125755 (2025)","IF 6.9 · Corr. Author","https://doi.org/10.1016/j.applthermaleng.2025.125755"],
+    ["Mingjie Wang, Soheil Mohtaram, Guocheng Yang, Bangren Zheng, Yan Ren, Weidong Wu, Chang Li, Wenliang Li, Yuanchao Cao","A Modified Heat and Mass Transfer Model for Numerical Simulation of Zeotropic Mixture Condensation","Applied Thermal Engineering, 265, 125645 (2025)","IF 6.1 · Co-first Author","https://doi.org/10.1016/j.applthermaleng.2025.125645"],
+    ["Seyedeh Mahdieh Mousavi, Mohammad Sina Mohtaram, Kamal Rasouli, Soheil Mohtaram, Hamid Rajabi*, Samad Sabbaghi*","Efficient Visible-Light-Driven Photocatalytic Degradation of Antibiotics in Water by MXene-Derived TiO2-Supported SiO2/Ti3C2 Composites: Optimisation, Mechanism and Toxicity Evaluation","Environmental Pollution, 367, 125624 (2025)","IF 7.6","https://doi.org/10.1016/j.envpol.2024.125624"],
+    ["Kang Li, Chunyu Li, Soheil Mohtaram*, Ni Liu, Hua Zhang, Binlin Dou, Chao Li, Qize He, Mohd Abul Hasan, Saiful Islam, Jingwu Wang, Zilong Wang, Jianhong Chen, Yashar Aryanfar","Experimental and Numerical Study on Scroll Compressor under Different Profile Correction and Discharge Ports Shapes","International Journal of Refrigeration, 169, 241–253 (2025)","IF 6.1","https://doi.org/10.1016/j.ijrefrig.2024.10.007"],
+    ["Humberto Garcia Castellanos, Yashar Aryanfar, Soheil Mohtaram, Ali Keçebaş, Gülşah Karaca-Dolgun, Shabbir Ahmad, Abdullah Naser M. Asiri, Saiful Islam","The Efficacy of Nano-Cellulose-Based Composites in Heavy Metal Removal from Wastewater: A Comprehensive Review","Journal of Chemical Technology &amp; Biotechnology, 100(2), 291–312 (2025)","IF 3.29","https://doi.org/10.1002/jctb.7775"],
+    ["Kang Li, Mingfei Tan, Yuan Man, Hua Zhang, Binlin Dou, Ni Liu, Tianjiao Zhang, Qize He, Lin Su, Soheil Mohtaram","Investigating Dehumidification and Heating Performance in a Dual Evaporator Heat Pump System for Electric Vehicles","International Journal of Refrigeration, 168, 620–631 (2024)","IF 6.4","https://doi.org/10.1016/j.ijrefrig.2024.09.024"],
+    ["Kang Li, Jiayun Hu, Chao Li, Xuejin Zhou, Ni Liu, Binlin Dou, Qize He, Ran Tu, Lin Su, Soheil Mohtaram","Refined One-Dimensional Modeling and Experimental Validation of Scroll Compressor with Vapor Injection for Electric Vehicles","International Journal of Refrigeration, 168, 469–483 (2024)","IF 6.4","https://doi.org/10.1016/j.ijrefrig.2024.09.007"],
+    ["Kang Li, Yanming Miao, Dingyu Xia, Ni Liu, Hua Zhang, Binlin Dou, Qize He, Yugang Zhao, Chao Li, Soheil Mohtaram","Impact of Optimized Gas-Liquid Separator on Temperature and Frost Distribution in Electric Vehicle Heat Pump AC","Applied Thermal Engineering, 248(B), 123282 (2024)","IF 6.9","https://doi.org/10.1016/j.applthermaleng.2024.123282"],
+    ["Kang Li, Huan Guo, Xuejin Zhou, Hongming Chen, Ni Liu, Hua Zhang, Binlin Dou, Qize He, Yafen Tian, Ran Tu, Lin Su, Soheil Mohtaram","Optimal Evaporation/Condensation Temperature Determination and Experimental Validation for Electric Vehicles","Applied Thermal Engineering, 252, 123708 (2024)","IF 6.9","https://doi.org/10.1016/j.applthermaleng.2024.123708"],
+    ["Omayma Akrout, Ons Ghriss, Abdallah Bouabidi, Humberto Garcia Castellanos, Soheil Mohtaram, Ali Keçebaş, Yashar Aryanfar","Investigative Analysis of the Influence of Diverse Fin Configurations on the Performance of a Dual Pass Solar Air Collector","Thermal Science and Engineering Progress, 50, 102545 (2024)","IF 4.8","https://doi.org/10.1016/j.tsep.2024.102545"],
+    ["Soheil Mohtaram, Mohammad Sina Mohtaram, Samad Sabbaghi, Xiaokuan You*, Weidong Wu, Lei Jia, Khursheed Muzammil, Nouf Abdullah Alraee, Saiful Islam, Yashar Aryanfar","Photocatalytic Degradation of Acetaminophen Using a Novel TiO2-Orange Peel-Derived Biochar Composite: Synthesis, Characterization, and Optimization of Key Factors","Journal of Water Process Engineering, 58, 104884 (2024)","IF 7.0 · 1st Author","https://doi.org/10.1016/j.jwpe.2024.104884"],
+    ["Soheil Mohtaram, Mohammad Sina Mohtaram, Samad Sabbaghi, Xiaokuan You*, Weidong Wu, Naser Golsanami","Enhancement Strategies in CO2 Conversion and Management of Biochar Supported Photocatalyst for Effective Generation of Renewable and Sustainable Solar Energy","Energy Conversion and Management, 300, 117987 (2024)","IF 10.4 · 1st Author, ESI Highly Cited 2024","https://doi.org/10.1016/j.enconman.2023.117987"],
+    ["Aryanfar Yashar, Soheil Mohtaram*, Castellanos Humberto Garcia, Elsayed M. Tag-Eldin, Busra Arsla, Ahmed Deifalla, Adham E. Ragab, HongGuang Sun*","Energy, Exergy and Exergoeconomic Analysis of a Trans-Critical CO2 Cycle Powered by a Single Flash Geothermal Cycle with/without Economizer Working Modes","Thermal Science, 00, 200–200 (2023)","IF 1.97 · Corr. Author","https://doi.org/10.2298/TSCI230503200A"],
+    ["Soheil Mohtaram, Wu Weidong*, Humberto Garcia Castellanos, Yashar Aryanfar, Mohammed K. Al Mesfer, Mohd Danish, Kashif Irshad","Enhancing Energy Efficiency and Sustainability in Ejector Expansion Transcritical CO2 and Lithium Bromide Water Vapour Absorption Refrigeration Systems","Thermal Science and Engineering Progress, 43, 101983 (2023)","IF 4.56 · 1st Author","https://doi.org/10.1016/j.tsep.2023.101983"],
+    ["Soheil Mohtaram, Yashar Aryanfar, Ahmed Ghazy, Weidong Wu*, Khaled Kaaniche, Jorge Luis García Alcaraz","An Innovative Approach for Utilizing Waste Heat of a Triple-Pressure Cogeneration CCPP by Employing TRR Method and Thermodynamic Analysis","Case Studies in Thermal Engineering, 49, 103198 (2023)","IF 6.27 · 1st Author","https://doi.org/10.1016/j.csite.2023.103198"],
+    ["Ehab Bani-Hani, Mamdouh El Haj Assad, Majed Alzara, Ahmed M Yosri, Yashar Aryanfar*, Humberto Garcia Castellanos, Soheil Mohtaram, Abdallah Bouabidi","Energy and Exergy Analyses of a Regenerative Brayton Cycle Utilizing Monochlorobiphenyl Wastes as an Alternative Fuel","Energy, 278(A), 127861 (2023)","IF 8.86 · Q1","https://doi.org/10.1016/j.energy.2023.127861"],
+    ["Soheil Mohtaram, Weidong Wu*","A Computationally Efficient Heuristic Approach for Solving a New Sophisticated Arrangement of Cogeneration Combined Heat and Power Cycle","Energy Reports, 9, 42–50 (2023)","IF 4.94 · 1st Author","https://doi.org/10.1016/j.egyr.2023.03.004"],
+    ["Yashar Aryanfar, Soheil Mohtaram*, Luis García Alcaraz, HongGuang Sun*","Energy and Exergy Assessment and a Competitive Study of a Two-Stage ORC for Recovering SFGC Waste Heat and LNG Cold Energy","Energy, 264, 126191 (2023)","IF 8.86 · Corr. + Co-first Author","https://doi.org/10.1016/j.energy.2022.126191"],
+    ["Yongbao Chen*, Yunyang Ye, Jingnan Liu, Lixin Zhang, Weilin Li, Soheil Mohtaram","Machine Learning Approach to Predict Building Thermal Load Considering Feature Variable Dimensions: An Office Building Case Study","Buildings, 13(2), 312 (2023)","IF 3.32","https://doi.org/10.3390/buildings13020312"],
+    ["Soheil Mohtaram, Weidong Wu, Yashar Aryanfar, Qiguo Yang, Jorge Luis García Alcaraz","Introducing and Assessment of a New Wind and Solar-Based Diversified Energy Production System Integrating Single-Effect Absorption Refrigeration, ORC, and SRC Cycles","Renewable Energy, 199, 179–191 (2022)","IF 9.0 · 1st Author","https://doi.org/10.1016/j.renene.2022.08.069"],
+    ["Longxiang Chen*, Liugan Zhang, Yongzhen Wang, Meina Xie, Huipeng Yang, Kai Ye, Soheil Mohtaram","Design and Performance Evaluation of a Novel System Integrating Water-Based Carbon Capture with Adiabatic Compressed Air Energy Storage","Energy Conversion and Management, 276, 116583 (2022)","IF 10.4","https://doi.org/10.1016/j.enconman.2022.116583"],
+    ["Soheil Mohtaram, Weidong Wu*, Yashar Aryanfar, Arya Abrishami, Mohammad Omidi, Qiguo Yang, Jorge Luis García Alcaraz, Yongbao Chen","Optimization and Energy-Exergy and Exergoeconomic Analysis of a Time-Dependent Theoretical Domestic Solar Li-Br Absorption Refrigeration Cycle","Science China Technological Sciences, 65, 2703–2722 (2022)","IF 3.90 · 1st Author","https://doi.org/10.1007/s11431-022-2147-3"],
+    ["Liu Xi, Wenchao Lan, Kai Ye, Wei Han, Jincheng Zhang, Soheil Mohtaram, Longxiang Chen","Numerical Simulation and Experimental Analysis of Ice Crystal Growth and Freezing-Centrifugal Desalination for Seawater with Different Compositions","Separation and Purification Technology, 298, 121656 (2022)","IF 9.14","https://doi.org/10.1016/j.seppur.2022.121656"],
+    ["Longxiang Chen*, Yongzhen Wang, Meina Xie, Kai Ye, Soheil Mohtaram","Energy and Exergy Analysis of Two Modified Adiabatic Compressed Air Energy Storage (A-CAES) Systems for Cogeneration of Power and Cooling on the Base of Volatile Fluid","Journal of Energy Storage, 42, 103009 (2021)","IF 8.91","https://doi.org/10.1016/j.est.2021.103009"],
+    ["Soheil Mohtaram, Yonghui Sun, M. Omidi, Ji Lin*","Energy-Exergy Efficiencies Analyses of a Waste-to-Power Generation System Combined with an Ammonia-Water Dilution Rankine Cycle","Case Studies in Thermal Engineering, 25, 100909 (2021)","IF 6.4 · 1st Author","https://doi.org/10.1016/j.csite.2021.100909"],
+    ["Soheil Mohtaram, Yonghui Sun, HongGuang Sun, A. Abrishami, M. Omidi, Ji Lin*","A Comprehensive Design, Optimization, and Development Methodology of a WHRB Using Serrated Fins and Extensive Surface in a Bulky CCPP","Case Studies in Thermal Engineering, 23, 100808 (2021)","IF 6.4 · 1st Author","https://doi.org/10.1016/j.csite.2020.100808"],
+    ["Soheil Mohtaram, HongGuang Sun, Ji Lin*, Wen Chen, Yonghui Sun","Multi-Objective Evolutionary Optimization &amp; 4E Analysis of a Bulky Combined Cycle Power Plant by CO2/CO/NOx Reduction and Cost Controlling Targets","Renewable and Sustainable Energy Reviews, 128, 109898 (2020)","IF 16.3 · 1st Author","https://doi.org/10.1016/j.rser.2020.109898"],
+    ["Mohammad Omidi, Shu-jie Liu, Soheil Mohtaram, Hui-tian Lu*","The Flow Simulation and Model Analysis of Efficiency and Pressure Ratio Behaviors in GT4086 Turbocharger Compressor","Mechanika, 26(4) (2020)","IF 0.6","http://dx.doi.org/10.5755/j01.mech.26.4.23867"],
+    ["Omidi, M, Liu S.J, Soheil Mohtaram, Lu H.T, Zhang H.C*","Improving Centrifugal Compressor Performance by Optimizing the Design of Impellers Using Genetic Algorithm and Computational Fluid Dynamics Methods","Sustainability, 11(19), 5409 (2019)","IF 3.9","https://doi.org/10.3390/su11195409"],
+    ["Soheil Mohtaram, Mohammad Omidi, Ji Lin, Hongguang Sun, Wen Chen*","Exergy Analysis of a Multi-Mixture Working Fluid Absorption Refrigeration Cycle","Case Studies in Thermal Engineering, 15, 100540 (2018)","IF 6.4 · 1st Author","https://doi.org/10.1016/j.csite.2019.100540"],
+    ["Soheil Mohtaram, Wen Chen*, Ji Lin","Investigation of the Combined Rankine-Absorption Power and Refrigeration Cycles Using the Parametric Analysis and Genetic Algorithm","Energy Conversion and Management, 150, 754–762 (2017)","IF 9.9 · 1st Author","https://doi.org/10.1016/j.enconman.2016.12.024"],
+    ["Soheil Mohtaram, Lin J, Chen W*","Evaluating the Effect of Ammonia-Water Dilution Pressure and Its Density on Thermodynamic Performance of Combined Cycles by the Energy-Exergy Analysis Approach","Mechanika, 23(2) (2017)","IF 0.6 · 1st Author","http://dx.doi.org/10.5755/j01.mech.23.2.18110"],
+    ["Soheil Mohtaram, Wen Chen*, Tahereh Zargar, Ji Lin","Energy-Exergy Analysis of Compressor Pressure Ratio Effects on Thermodynamic Performance of Ammonia Water Combined Cycle","Energy Conversion and Management, 134, 77–87 (2017)","IF 9.9 · 1st Author","https://doi.org/10.1016/j.enconman.2016.12.024"],
+    ["Soheil Mohtaram, Chen W, Lin J*","A Study on an Absorption Refrigeration Cycle by Exergy Analysis Approach","IOP Conference Series: Earth and Environmental Science, 182(1), 012021 (2018)","EI","https://doi.org/10.1088/1755-1315/182/1/012021"],
+    ["M. Amin Nikbakht, Soheil Mohtaram, Mohammad Hasan Moghadas*","An Investigation on the Flow Behavior in the Airfoil of a Flapping Wing","International Journal of Engineering Works, 5(9), 138–146 (2018)","EI","https://zenodo.org/record/1412800"],
+    ["Soheil Mohtaram, S.A.A. Mirjalili, A.R. Faghih Khorasani*","Analysis and Simulation of the Effect of Inlet Air on the Performance of Ammonia-Water Combined Cycle","Journal of Solid Mechanics, 7(3), 57–65 (2015)","—","http://jsme.iaukhsh.ac.ir/article_516008.html"],
+    ["Gheisari R, Ghasemi A A, Jafarkarimi M, Soheil Mohtaram","Experimental Studies on the Ultra-Precision Finishing of Cylindrical Surfaces Using Magnetorheological Finishing Process","Production &amp; Manufacturing Research, 2(1), 550–557 (2014)","EI","https://doi.org/10.1080/21693277.2014.945265"],
+    ["Soheil Mohtaram, MA Nikbakht*","Detect Tool Breakage by Using Combination Neural Decision System &amp; ANFIS Tool Wear Predictor","International Journal of Mechanical Engineering &amp; Applications, 1(2), 59–63 (2013)","EI","https://doi.org/10.11648/j.ijmea.20130102.15"]
+  ];
+
+  const confPapers = [
+    ["Soheil Mohtaram, Weidong Wu","A Computationally Efficient Heuristic Approach for Solving a New Sophisticated Arrangement of Cogeneration Combined Heat and Power Cycle","The 7th International Conference on New Energy and Future Energy Systems, Nanjing, China — October 25–28, 2022"],
+    ["Soheil Mohtaram, Wen Chen, Ji Lin","A Study on an Absorption Refrigeration Cycle by Exergy Analysis Approach","9th International Conference on Environmental Science and Technology (ICEST 2018), Prague, Czech Republic — June 20–22, 2018"],
+    ["Soheil Mohtaram, Seyed Aliagha Mirjalili, Ahmad Reza Faghih Khorasani","Analysis and Simulation of the Effect of the Recuperator on Thermodynamic Performance of a Combined Ammonia Water Cycle","International Conference on Engineering Sciences, Barcelona, Spain — April 14–15, 2015"],
+    ["Soheil Mohtaram, Mojtaba Kolahdoozan, Mohammad Amin Nikbakht","Finite Element Simulation of the Effect of Feed Speed Variations on Machining Forces Using the DEFORM-3D Software","4th International Conference on Materials Heat Treatment (ICMH 2013), Isfahan, Iran"],
+    ["Soheil Mohtaram, Mojtaba Kolahdoozan","Finite Elements Simulation of the Depth Cutting Effect on Machining Forces by DEFORM-3D Software","7th National Conference in Mechanical Engineering, Islamic Azad University of Khomeini Shahr, Esfahan, Iran — March 11–12, 2015"],
+    ["Soheil Mohtaram, Mohammad Amin Nikbakht","Optimized Effective Parameters in Machining of Super-Alloy Inconel-718 by Using Taguchi Algorithm","6th Trans-Regional Conference on Advances in Engineering Sciences, Tonekabon, Iran"]
+  ];
+
+  const bookChapters = [
+    ["Jorge Luis García-Alcaraz, Pedro García-Alcaraz, Yashar Aryanfar, Arturo Realyvásquez-Vargas, Soheil Mohtaram, Mamdouh El Haj-Assad","Multicriteria Decision Making Methods — A Review and Case of Study","Springer"],
+    ["Soheil Mohtaram","4E Evolutionary Analysis in Dual Mixture Combined Cycles","Amazon"]
+  ];
+
+  let populated = false;
+  document.querySelector('details.full-pubs').addEventListener('toggle', function(e){
+    if(this.open && !populated){
+      populated = true;
+      const sci = document.getElementById('sci-list');
+      sciPapers.forEach(p=>{
+        const div = document.createElement('div');
+        div.className = 'full-pub-item';
+        div.innerHTML = `${p[0]}. <strong>${p[1]}.</strong> ${p[2]} — <span class="fp-if">${p[3]}</span><br><a href="${p[4]}" target="_blank" rel="noopener">${p[4]}</a>`;
+        sci.appendChild(div);
+      });
+      const conf = document.getElementById('conf-list');
+      confPapers.forEach(p=>{
+        const div = document.createElement('div');
+        div.className = 'full-pub-item';
+        div.innerHTML = `${p[0]}. <strong>${p[1]}.</strong> ${p[2]}`;
+        conf.appendChild(div);
+      });
+      const book = document.getElementById('book-list');
+      bookChapters.forEach(p=>{
+        const div = document.createElement('div');
+        div.className = 'full-pub-item';
+        div.innerHTML = `${p[0]}. <strong>${p[1]}.</strong> ${p[2]}`;
+        book.appendChild(div);
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
